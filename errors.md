@@ -9,6 +9,7 @@
 3 Solutions (Debian Based):
 
 - Restart the Docker daemon: ```sudo systemctl restart docker``` (status: 200)
+    - Second found possible solution to attempt this is running ```Docker-compose up --build``` twice.
 
 - Check that the DNS settings are correct: ```cat /etc/resolv.conf```
 
