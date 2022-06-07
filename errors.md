@@ -8,7 +8,7 @@
 
 3 Solutions (Debian Based):
 
-- Restart the Docker daemon: ```sudo systemctl restart docker``` (worked)
+- Restart the Docker daemon: ```sudo systemctl restart docker``` (status: 200)
 
 - Check that the DNS settings are correct: ```cat /etc/resolv.conf```
 
