@@ -9,6 +9,8 @@ With Kubernetes, we can easily scale our application to handle more traffic. We 
 
 **Note: This guide assumes that you have a basic understanding of Kubernetes, Docker, Networking, and the MERN Stack and containerized applications. **
 
+## Requirements:
+
 1. Install Docker on your local machine. You can find instructions for doing this here: https://docs.docker.com/install/
 
 2. Install minikube. You can find instructions for doing this here: https://kubernetes.io/docs/tasks/tools/install-minikube/
