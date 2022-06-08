@@ -32,6 +32,8 @@ With Kubernetes, we can easily scale our application to handle more traffic. We 
 
 5. Access your React Application at http://localhost:3000
 
+6. Review the documentation for integrating the [Kubernetes Ingress Controller](https://kubernetes.github.io/ingress-nginx/).
+
 ## Instructions:
 
 I. Install Docker on your local machine:
