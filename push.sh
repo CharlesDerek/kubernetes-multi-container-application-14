@@ -64,5 +64,5 @@ if [ -z "$Commit" ]; then
     git push
 else
     echo "Commits saved locally"
-#   Run locally with a inserted value to unassigned variable `$Commit` (Example): Commit=1 ./push.sh
+#   Run local commit only with a abritrary inserted value to unassigned variable `$Commit` (Example): ```Commit=1 ./push.sh```
 fi
