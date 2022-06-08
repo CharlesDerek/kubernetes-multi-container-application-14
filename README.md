@@ -30,3 +30,12 @@ With Kubernetes, we can easily scale our application to handle more traffic. We 
 4. Run the docker image you created in step 3 using minikube.
 
 5. Access your React Application at http://localhost:3000
+
+## Instructions:
+
+I. Install Docker on your local machine:
+    - Follow the instructions on the provided path
+        ||
+    - Run the installation.sh script (Linux only at the current moment)
+        $ ```sudo chmod +x installer.sh; ./installer.sh;```
+    
