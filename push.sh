@@ -59,4 +59,10 @@ echo "Your provided git message is: "${branch_message}
 git commit -m "${branch_message}"
 
 #Deploy:
-git push
+if [ -z "$Commit" ]; then
+    echo "Pushing to Github"
+    git push
+else
+    echo "Commits saved locally"
+#   Run locally with a inserted value to unassigned variable `$Commit` (Example): Commit=1 ./push.sh
+fi
