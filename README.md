@@ -33,6 +33,10 @@ With Kubernetes, we can easily scale our application to handle more traffic. We 
 5. Access your React Application at http://localhost:3000
 
 6. Review the documentation for integrating the [Kubernetes Ingress Controller](https://kubernetes.github.io/ingress-nginx/).
+    - Additional (optional read) information on [how to deploy a Kubernetes Ingress Controller](https://www.joyfulbikeshedding.com/blog/2018-03-26-studying-the-kubernetes-ingress-system.html).
+    - Warning: This is a very advanced topic. You should only proceed if you are comfortable with the concepts. 
+    - Warning: Ingress is not available with Desktop Docker installation. You will need to install the [Kubernetes CLI](https://kubernetes.io/docs/tasks/tools/install-kubectl/) to use the Ingress Controller.
+    - Warning: Please triple-check that you are installing [Ingress Nginx (Kubernetes)](https://kubernetes.github.io/ingress-nginx/) and not [Nginx Ingress](https://docs.nginx.com/nginx-ingress-controller/), which is a totally different and incompatible library.
 
 ## Instructions:
 
@@ -41,4 +45,8 @@ I. Install Docker on your local machine:
         ||
     - Run the installation.sh script (Linux only at the current moment)
         $ ```sudo chmod +x installer.sh; ./installer.sh;```
-    
+II. Install Minikube:
+    - Follow the instructions on the provided path:
+        - [minikube](https://kubernetes.github.io/ingress-nginx/deploy/#quick-start)
+    - Run this command (If kubectl is installed and on linux):
+        $ ```minikube start```
