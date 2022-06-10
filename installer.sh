@@ -8,6 +8,11 @@ unsupported="Unfortunately we do not support automated installers for this opera
 if [ "$(uname)" == "Darwin" ]; then
     echo "$greeting1 mac $greeting2"
     echo "$unsupported"
+    exit 1
+    # Installing Scaffold:
+    # For macOS on x86_64 (amd64)
+    curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffold-darwin-amd64
+    sudo install skaffold /usr/local/bin/
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     echo "$greeting1 linux $greeting2"
     # Install (Debian Based Distros):
@@ -30,6 +35,9 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
     sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
     kubectl version
     echo "Installation Successfully Completed"
+    # For Linux x86_64 (amd64)
+    curl -Lo skaffold https://storage.googleapis.com/skaffold/releases/latest/skaffold-linux-amd64
+    sudo install skaffold /usr/local/bin/
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     echo "$greeting1 windows $greeting2"
     echo "$unsupported"
